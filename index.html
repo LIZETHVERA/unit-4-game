@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars RPG Game </title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="container" id="main-game-section">
+    <div class = "row">
+    <div class="container col-lg-12" id="characters-section"></div>
+    <div class="container section-title" id="action" >Your Character</div>
+    <div class="container col-lg-6" id="selected-character-section">
+        <div class="section-title container"></div>
+        <div id="selected-character"></div>
+    </div>
+ 
+    <div class="character-section">
+        <div class="container section-title col-lg-4">
+            <div id="defender">Defender</div>
+        </div>
+        <div >
+            <button class="btn" id="attack-button">Attack</button>
+            <div class="jumbotron" id="gameMessage"></div>
+        </div>	
+
+        <div class="section-title container col-lg-4"id="enemies_left">Enemies Avaible to attack</div> 
+        <div >
+        <button class="btn" id="restart-button">Restart</button>
+        </div>	
+    </div>	
+    </div>	  
+</div>	
+    <!-- <script src="assets/javascript/game-1.js" type="text/javascript"></script> -->
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+</body>
+
+</html>
