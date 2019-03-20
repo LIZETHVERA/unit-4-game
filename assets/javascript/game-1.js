@@ -193,7 +193,7 @@ function fight () {
     console.log('Attacker attributes ' + JSON.stringify(attackerAttributes));
 
     // For debuggin purposes
-    console.log('Display characters info');
+    console.log('Display characters')
     console.log('Defender attributes ' + JSON.stringify(characters));
 
     // If attacker dies then display game over and restart button
