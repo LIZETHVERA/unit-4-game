@@ -1,5 +1,7 @@
-   var gameOn = false;
+    var gameOn = false;
     var chooseChar = false;
+    var chooseAttacker = true;
+    var chooseDefender = true;
     var enemiesLeft = false;
     var userDeath = false;
     var computerDeath = false;
@@ -80,10 +82,10 @@ $(".character").on("click", function() {
         //move the enemies left to the enemies available to attack. 
         $("#characters-section").appendTo("#enemies_left");
 
-    } else if (chooseChar) { //user is alive and needs a new opponent
+    } else if (chooseChar) { //user is alive and needs a new opponent ** chooseDefender
         
-        //flags functionality of fight and reset buttons, disables characters
-		chooseChar = false;
+        //flags functionality of fight and reset buttons, disables characters ** chooseDefender
+        chooseChar = false;
         
         gameOn = true; 
         $("#alerts").html(""); // clears any alerts, if any
@@ -105,9 +107,8 @@ console.log(defender);
     }
 });
 
+function fight (){
 
-
- function fight (){
     counter ++;
     counterdefender ++;
     console.log(counter);
@@ -125,7 +126,7 @@ console.log(defender);
     console.log("attacker healt1" + attackerHealth);
     
     
-        // Decrese the defender power.
+    // Decrese the defender power.
     defenderHealth-= attackerAttack; 
  
     //change data on defender healthPower
@@ -149,22 +150,20 @@ console.log(defender);
     $("#gameMessage").append("You did " + attackerAttack + " damage to " + defender.data("name") + ". "); 
     $("#gameMessage").append( defender.data("name") + "damage to you " + damage); 
 
-     // update attack power
-      
-   
+    // update attack power
+     
     //change data on attacker healthPower
     attacker.data("healthPower", attackerHealth); 
 
     console.log("attack to defender final" + attackerAttack);
 
     if (defenderHealth <= 0){
-             $("#gameMessage").html('');
-             $("#gameMessage").append("You have defeated " + defender.data("name") + ". Choose a new character");
+            $("#gameMessage").html('');
+            $("#gameMessage").append("You have defeated " + defender.data("name") + ". Choose a new character");
                
-             defender.remove();
-             
-             chooseChar = true;
-             counterdefender = 0;
+            defender.remove();
+            chooseChar = true; //** chooseDefender
+            counterdefender = 0;
              
     } else if (chooseChar) {
         $("#gameMessage").text("please select a character");
