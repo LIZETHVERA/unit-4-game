@@ -1,4 +1,4 @@
-# unit-4-game
+Wars RPG Game: 
 Wars RPG Game
 When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game.
 The player must then defeat all of the remaining fighters. Enemies should be moved to a different area of the screen.
@@ -54,3 +54,8 @@ A winning player must pick their characters wisely by first fighting an enemy wi
 
 
 Your players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player.
+
+Technologies utilized
+HTML5
+CSS
+jQuery 
