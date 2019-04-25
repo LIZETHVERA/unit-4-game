@@ -22,6 +22,6 @@ This game was built using jQuery - The most challenge part was to access to the 
 I learned many things about separations of concerns - JavaScript apart of the DOM. 
 
 # Technologies utilized: 
-HTML5
-CSS
-jQuery 
+* HTML5
+* CSS
+* jQuery 
