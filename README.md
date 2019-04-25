@@ -17,6 +17,10 @@ When the defender's HP is reduced to zero or below, remove the enemy from the de
 
 The player wins the game by defeating all enemy characters. The player loses the game the game if their character's HP falls to zero or below.
 
+# Code
+This game was built using jQuery - The most challenge part was to access to the elements in the DOM and work with them. 
+I learned many things about separations of concerns - JavaScript apart of the DOM. 
+
 # Technologies utilized: 
 HTML5
 CSS
